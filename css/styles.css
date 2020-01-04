@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+}
+
+.cntnr-prodcts {
+  width: 100%;
+  height: 300px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+}
+
+.prodcts {
+  max-width: 960px;
+  width: 100%;
+  height: inherit;
+  background-color: rebeccapurple;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 10px;
+}
+
+.ttl-prodct {
+  background-color: orange;
+}
+
+.item-prodct {
+  height: auto;
+  background-color: red;
+}
