@@ -1,0 +1,156 @@
+.header {
+  .max-width-page(65px);
+  background-color: @color-secundario;
+
+  &__contnr {
+    .max-width-contnr();
+    .center-contnr();
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 55px;
+    width: $height;
+    background-color: @color-white;
+    border-radius: 50%;
+  }
+
+  .button {
+    border: none;
+    background-color: transparent;
+    width: 28px;
+    height: $width;
+    margin-right: 30px;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__icon-menu {
+    display: none;
+  }
+
+  &__navbar {
+    height: inherit;
+    width: 450px;
+    display: block;
+  }
+
+  &__menu {
+    width: inherit;
+    height: inherit;
+    .flexbox-center();
+    justify-content: space-between
+  }
+
+  &__items {
+    .flexbox-center();
+    list-style: none;
+    height: inherit;
+    width: 80px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: @color-white;
+    width: inherit;
+    height: $width;
+    .flexbox-center();
+    font-family: @font-family-primary;
+    font-size: @font-base - 1%;
+    &:hover {
+      background-color: @color-hover;
+    }
+  }
+
+}
+
+@media screen and (max-width: 680px) {
+  
+  .header {
+    &__logo {
+      margin-left: 30px;
+    }
+
+    &__navbar {
+      display: none;
+    }
+
+    &__icon-menu {
+      display: block;
+      // margin-left: 30px;
+    }
+  }
+}
+
+
+// Cuando el usuario haga clic
+@media screen and (max-width: 599px) {
+  .header {
+    // height: 100vh;
+    // width: 100vw;
+
+    &__contnr {
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      // top: 65px;
+      display: none;
+      height: 100vh;
+      width: 100vw;
+      flex-direction: column;
+      justify-content: space-evenly;
+      // background-color: @color-secundario;
+      background-color: purple;
+    }
+
+    &__icon-menu {
+      display: none;
+    }
+
+    &__logo {
+      width: 85px;
+      height: $width;
+      margin: initial;
+    }
+
+    &__navbar {
+      display: flex;
+      height: 60%;
+    }
+
+    &__menu {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__items {
+      border: 1px solid @color-white;
+      height: 60px;
+      width: 250px;
+      border-radius: 4px;
+    }
+  
+  }
+}
+
+
+// @media screen and (max-width: 419px) {
+//   .products {
+//     &__layout {
+//       .max-width-contnr(300px);
+//     }
+//     &__items {
+//       padding: 20px 25px;
+//     }
+//   }
+// }

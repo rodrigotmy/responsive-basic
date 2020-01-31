@@ -7,40 +7,97 @@
   <link rel="stylesheet" href="css/styles.css">
   <title>Template HTML + CSS</title>
 </head>
-<body>
-  <div class="cntnr-prodcts">
-    <div class="prodcts">
-      <div class="item-prodct">
-        <figure class="cntnr-img">
-          <img src="" alt="">
-        </figure>
-        <h4 class="name-prodct">Nombre producto</h4>
-        <span class="descrp-product">
-          Aqui se explicara la descripción del producto,
-          sera algo breve y con total claridad para el cliente.
-        </span>
-      </div>
-      <div class="item-prodct">
-        <figure class="cntnr-img">
-          <img src="" alt="">
-        </figure>
-        <h4 class="name-prodct">Nombre producto</h4>
-        <span class="descrp-product">
-          Aqui se explicara la descripción del producto,
-          sera algo breve y con total claridad para el cliente.
-        </span>
-      </div>
-      <div class="item-prodct">
-        <figure class="cntnr-img">
-          <img src="" alt="">
-        </figure>
-        <h4 class="name-prodct">Nombre producto</h4>
-        <span class="descrp-product">
-          Aqui se explicara la descripción del producto,
-          sera algo breve y con total claridad para el cliente.
-        </span>
+<body class="body-main">
+  <header class="header">
+    <div class="header__contnr">
+      <figure class="header__logo">
+        <!-- <img src="" alt=""> -->
+      </figure>
+      <button class="header__icon-menu button">
+        <img src="images/icons/icon-hamburger-menu.png" alt="">
+      </button>
+
+      <nav class="header__navbar">
+        <ul class="header__menu">
+          <li class="header__items"><a href="#" class="header__link active">Inicio</a></li>
+          <li class="header__items"><a href="#" class="header__link">Nuevos</a></li>
+          <li class="header__items"><a href="#" class="header__link">Popular</a></li>
+          <li class="header__items"><a href="#" class="header__link">Contacto</a></li>
+          <li class="header__items"><a href="#" class="header__link">Acerca</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- <div class="hero">
+    <div class="hero__contnr">
+      <form action="#hero__form" class="hero__form">
+        <input class="hero__input-search" type="search" placeholder="¿Que deseas buscar?">
+        <button class="hero__button-search" type="reset">Buscar</button>
+      </form>
+    </div>
+  </div> -->
+
+  <div class="signin">
+    <div class="signin__contnr">
+      <figure class="signin__image">
+        <img src="images/image-logo.png" alt="">
+      </figure>
+      <h1 class="signin__title">Nuevos productos</h1>
+      <div class="signin__descrp">
+        <p>
+          Cosas nuevas estan por llegar, registrate y obten notificaciones por cada producto que llegue. <br>
+          Esta sera la sección para la description del formulario.</div>
+        </p>
+      <form action="#form" class="signin__form">
+        <p class="signin__form-title">Registrate</p>
+        <input type="email" placeholder="Ingrese correo electronico">
+        <input type="password" placeholder="Ingrese contraseña">
+        <button type="submit" class="signin__form-button">Enviar</button>
+      </form>
+      <div class="signin__login">
+        <p class="signin__login-text">¿Ya tienes una cuenta?</p>
+        <p class="signin__login-link"><a href="#login">Iniciar sesión</a></p class="signin__login-link">
       </div>
     </div>
   </div>
+
+  <div class="products">
+    <div class="products__layout">
+      <div class="products__items">
+        <figure class="products__image">
+          <img src="images/avatar/Fotos TUMBLR ❤ - 1.jfif" alt="">
+        </figure>
+        <h2 class="products__title">Nombre producto</h2>
+        <span class="products__descrp">
+          Aqui se explicara la descripción del producto,
+          sera algo breve y con total claridad para el cliente.
+        </span>
+      </div>
+      <div class="products__items">
+        <figure class="products__image">
+          <img src="images/avatar/8 Most Important Glasses Makeup Tips For Glasses Wearers.jfif" alt="">
+        </figure>
+        <h2 class="products__title">Nombre producto</h2>
+        <span class="products__descrp">
+          Aqui se explicara la descripción del producto,
+          sera algo breve y con total claridad para el cliente.
+        </span>
+      </div>
+      <div class="products__items">
+        <figure class="products__image">
+          <img src="images/avatar/descargar (1).jfif" alt="">
+        </figure>
+        <h2 class="products__title">Nombre producto</h2>
+        <span class="products__descrp">
+          Aqui se explicara la descripción del producto,
+          sera algo breve y con total claridad para el cliente.
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="jss/scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,77 @@
+.products__layout {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-template-rows: 250px;
+  grid-gap: 15px;
+}
+
+@media screen and (max-width: 799px) {
+  .products__layout {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, minmax(250px, 1fr));   
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .products__layout {
+    grid-template-rows: repeat(3, 250px);
+    grid-template-columns: minmax(400px, 1fr);
+    grid-gap: 25px 0;
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .products__layout {
+    grid-template-rows: repeat(3, 250px);
+    grid-template-columns: minmax(300px, 1fr);
+    grid-gap: 25px 0;
+  }
+}
+
+
+
+.signin {
+  display: grid;
+  grid-template-columns: minmax(auto, @width-contnr);
+  justify-content: center;
+
+  &__contnr {
+    display: grid;
+    grid-template-columns: 100px 1fr 320px;
+    grid-template-areas: "img title form"
+                          ". descrip form"
+                          ". login form";
+    grid-gap: 0 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 876px) {
+  .signin {
+    height: auto;
+    &__contnr {
+      grid-template-columns: 100px 1fr;
+      grid-template-areas: "img title"
+                            "descrip descrip"
+                            "form form"
+                            "login login";
+      // grid-gap: 0 20px;
+      // height: auto;
+    }
+
+    &__descrp {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__form {
+      height: auto;
+    }
+
+    &__login {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}

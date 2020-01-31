@@ -1,0 +1,102 @@
+.signin {
+  height: 270px;
+  background-color: @color-exclusivo;
+  
+  &__contnr {
+    background-color: @color-exclusivo;
+  }
+
+  &__image {
+    grid-area: img;
+    width: 100px;
+    height: $width;
+    margin: auto 0;
+
+    img {
+      width: 100%;
+      height: $width;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__title {
+    grid-area: title;
+    padding-top: 40px;
+    color: #f0f0f0;
+    font-size: 1.7em;
+  }
+
+  &__descrp {
+    grid-area: descrip;
+    color: #f0f0f0;
+    padding-right: 50px;
+    p {
+    line-height: @font-base + 10%;
+      
+    }
+  }
+
+  &__form {
+    box-shadow: @box-shadow;
+
+    border-radius: 6px;
+    height: 90%;
+    margin: auto 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: @color-primario;
+    grid-area: form;
+
+    input {
+      display: block;
+      width: 80%;
+      padding-left: 15px;
+      height: 40px;
+      margin-bottom: 12px;
+      border: none;
+      border-radius: 4px;
+      .center-contnr();
+      font-size: .9em;
+    }
+  }
+
+  &__form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+
+  &__form-button {
+    display: block;
+    width: 35%;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    background-color: @color-secundario;
+    color: @color-white;
+    .center-contnr();
+    font-size: .9em;
+    cursor: pointer;
+  }
+
+  &__login {
+    grid-area: login;    
+  }
+
+  &__login-text {
+    text-align: center;
+  }
+
+  &__login-link {
+    text-align: center;
+    margin-top: 5px;
+    a {
+      color: #FFF;
+      text-decoration: none;
+    }
+  }
+}
+
+
